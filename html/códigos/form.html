@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários: </h1>
+    <p>Formularios são campos onde o usuario insere informações, é relacionado com o servidor. </p>
+    <p>Quando clica em enviar, transmite as informações pro servidor</p>
+    <form onsubmit="alert('Esse formulário já foi enviado')">
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number"name="age"><br>
+        Senha: <input type="password"name="password"/><br>
+        <button type="submit">Enviar</button>
+    </form><br>
+    <p>O código do formulário fica assim: </p>
+    <code>&lt;form onsubmit="alert('Esse formulário já foi enviado')"&gt;<br>
+        Nome: &lt;input type="text" name="name"/&gt;&lt;br&gt;<br>
+        Idade: &lt;input type="number"name="age"&gt;<&lt;br&gt;<br>
+        Senha: &lt;input type="password"name="password"/&gt;&lt;br&gt;<br>
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+    &lt;/form&gt;<br></code>
+    
+
+    <ul>
+        <li>o input é filho de form e é um campo de inserir valores.</li>
+        <li>on alguma coisa representa um evento em javascript</li>
+    </ul>
+    <h3>Atributos de form:</h3>
+    <ul>
+        <li>name:  é o nome do formulário (mais usado para o javascript)</li>
+        <li>action: pra onde os dados vão, onde coloco o endereço do servidor. <br>ex.: &lt;form action= "sitedoservidor.com"&gt;&lt;/form&gt;</li>
+        <li>method: como as informações serão enviadas ao servidor:
+            <ul><li>GET: manda as info por URL, n é indicado p senhas.</li>
+            <li>POST: manda as info p requisição, enpacota a informação e só desenpacota lá no servidor.</li></ul>
+        </li>
+        <li>target: controla em que aba vai executar
+            <ul><li>blank: abre o conteudo em guia diferente.</li>
+            <li>self: abre o conteudo na mesma guia.</li></ul>
+        </li>
+        <li>autocomplete: completa as informações do usuario automaticamente. Se ON permite essa função, se OFF se encontra desligada.</li>
+        <li>on alguma coisa: 
+            <ul>
+                <li>significa evento</li>
+                <li>quando é onsubmit quando clica em cima aciona uma ação javascript, geralmente valida o formulário.</li>
+            </ul>
+        </li>
+    </ul>
+    
+<h2>Formulario de cadastro 2 - Tag Input e  seus tipos </h2>
+
+<p>Tag input é usada para que o usuario insira informações.</p>
+<h3>Tipos de input: </h3>
+
+<form >
+    <label>Text: </label><input type="text"><br>
+    <p>Usuario consegue digitar qualquer texto.</p>
+    <label> Number: </label><input type="number" min="0" max="90" step=""><br>
+    <p>Em number é possivel escolher numero minimo e maximo com o atributo min= "n" ou max="n".</p>
+    <code>Ex.: &lt;label&gt; Number: &lt;/label&gt;&lt;input type="number" min="0" max="90" step=""&gt;&lt;<br></code><br>
+    
+    <label> Range: </label><input type="range" value="Enviar"><br>
+    <label> Color: </label><input type="color" ><br>
+    <label> Email: </label><input type="email" ><p>Exige um @.</p><br>
+    <label>URL: </label><input type="url"><p>Na URL precisa colocar http ou https e o ".com"</p><br>
+     <label>Date: </label><input type="date"><br>
+     <label>Week (semana): </label><input type="week"><br>
+     <label>Month (mês): </label><input type="month"><br>
+     <label>Checkbox: </label><input type="checkbox"><br>
+     <label>Radio: </label><input type="radio"><p>Radio funciona de forma parecida que o checkbox, com adiferença que é possivel escolher entre uma opção ou outra.</p><br>
+     <label>Hidden: </label><input type="hidden"><p>É invisivel para o usuário.Indica qual registro do banco de daods precisa ser atualizado quando o formulario for enviado.</p><br>
+     <label>File: </label><input type="file"><p>Campo de enviar arquivos.</p><br>
+     <label>Search: </label><input type="search"><p>Campo de texto com botão de limpar.</p><br>
+    <label> Button: </label><input type="submit" value="Enviar"><br>
+</form>
+
+<h2>Formulario 3 - Checkbox e Radio button</h2>
+<form method="post">
+
+<h3>Você selecionou: Pizza de Calabresa</h3>
+<h4>Tipo checkbox:</h4>
+<p>Pode escolher varias opções.</p>
+<p>Quais opções você deseja?</p>
+<input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+<input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+<input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+<input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+
+<h4>Tipo radio:</h4>
+<p>Pode escolher entre uma opção e outra.</p>
+<p>Borda recheada?</p>
+<input type="radio" name="borda" value="sim"> Sim <br>
+<input type="radio" name="borda"value= "nao"> Não <br>
+<p>Bebida: </p>
+<input type="radio" name="bebida"value= "suco"> Suco <br>
+<input type="radio" name="bebida"value= "refrigerante"> Refrigerante <br>
+<input type="radio" name="bebida"value= "agua"> Água <br>
+<input type="radio" name="bebida"value= "nenhum"> Nenhum <br>
+<button type="submit">Enviar</button>
+</form>
+
+<h2>Formulário 4 - Button e seus tipos</h2>
+<form onsubmit="" method="get">
+    <label>Nome: </label><input type="text" name="name"><br>
+    <label>Idade: </label><input type="number" name="age"><br>
+    <label>Password: </label><input type="password" name="password"><br>
+    
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button><p><code>&lt;button type="reset"&gt;Limpar&lt;/button&gt;</code> reset limpa o formulario</p>
+</form>
+
+<h2>Formulario 5 - Select e seus tipos</h2>
+<p>Lista pré definida de valores que quero que o usuário escolha.</p>
+<p>Caso eu queira deixar o usuario escolher mais de uma opção, é só colocar o atributo multiple dentro de select </p>
+<form onsubmit="" method="get">
+   <label>Nome: </label> <input type="text" name="name"><br>
+   <label>Setor: </label><select name="role">
+    <option value="">Selecione o seu setor</option>
+    <option value="Administrativo">Administrativo</option>
+    <option value="Financeiro">Financeiro</option>
+    <option value="Marketing">Marketing</option>
+    <option value="TI">TI</option>
+   </select>
+   
+   <br><label>Assunto: </label><input type="text"><br>
+
+   <br><label>Mensagem: </label><textarea name="message"></textarea><br>
+
+   <button type="submit">Enviar</button>
+   <h2> Formulário 6 - Text Area</h2>
+   <p>Área de texto.</p>
+
+   <label>Nome: </label><input type="text"><br>
+   <label>Idade: </label><input type="number"><br>
+   <label>Telefone: </label><input type="number"><br>
+   <label>Email: </label><input type="email"><br>
+   <label>Setor: </label><select name="role" >
+    <option value="selecionar">Selecione o setor</option>
+    <option value="limpeza">Limpeza</option>
+    <option value="sac">SAC</option>
+    <option value="fiscal">Fiscal</option>
+   </select><br>
+   <label>Mensagem: </label><textarea name="message2" ></textarea><br>
+   <button type="submit">Enviar</button>
+</form> 
+</body>
+</html>
