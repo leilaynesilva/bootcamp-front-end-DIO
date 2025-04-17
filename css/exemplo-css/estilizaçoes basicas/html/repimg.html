@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição das Imagens de Fundo</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-image: url(paisagem1.jpg);
+            background-size: 120px;
+            margin-bottom: 30px;
+        }
+
+        #repeat{
+            background-repeat: repeat;
+        }
+        #repeat-x {
+            background-repeat: repeat-x;
+            border: 2px solid black;
+        }
+        #repeat-y{
+            border: 2px solid black;
+            background-repeat: repeat-y;
+        }
+        #space{
+            background-repeat: space;
+        }
+        #round{
+            background-repeat: round;
+        }
+        #no-repeat{
+            background-repeat: no-repeat;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <code>background-repeat: repeat;</code>
+    <div id="repeat"></div>
+    
+    <code>background-repeat: repeat-x;</code>
+    <div id="repeat-x"></div>
+    
+    <code>background-repeat: repeat-y;</code>
+    <div id="repeat-y"></div>
+    
+    <code>background-repeat: space;</code>
+    <div id="space"></div>
+    
+    <code>background-repeat: round;</code>
+    <div id="round"></div>
+    
+    <code>background-repeat: no-repeat;</code>
+    <div id="no-repeat"></div>
+</body>
+</html>

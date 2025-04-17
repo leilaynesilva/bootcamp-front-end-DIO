@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo dos Elementos</title>
+    <style>
+      #url  {
+            height:600px;
+            width: 600px;
+            background-color: lightblue;
+            background-image: url(nasalogo.png);
+            border: black solid 2px;
+            }
+    
+    #linear-gradient{
+        height: 300px;
+        width: 300px;
+        background-color: orange;
+        margin: 20px;
+        background-image: linear-gradient(orange, orangered,red);
+    }
+    #radial-gradient{
+        height: 300px;
+        width: 300px;
+        background-color: purple;
+        margin: 20px;
+        background-image: radial-gradient(purple, rgb(255, 0, 204),rgb(73, 24, 170));
+    }
+    
+    #repeating-linear-gradient{
+        height: 300px;
+        width: 300px;
+        background-color: purple;
+        margin: 20px;
+        background-image:repeating-linear-gradient(to left, orange 0px 20px, orangered 20px 40px);
+    }
+
+    #projectsverou{
+        height: 300px;
+        width: 300px;
+        background-color:rgb(27, 27, 173);
+background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    }
+    </style>
+</head>
+<body>
+    <div id="url"><h3>Imagem p url</h3></div>
+    <div id="linear-gradient"><h3>Gradiente Linear</h3></div>
+    <div id="radial-gradient"><h3>Gradiente Radial</h3></div>
+    <div id="repeating-linear-gradient"><h3>|Gradiente linear de prepetição</h3></div>
+    <div id="projectsverou"> <h3>Projeto Verou modelo</h3></div>
+</body>
+</html>

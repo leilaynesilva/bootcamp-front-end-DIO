@@ -1,0 +1,36 @@
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed rgb(255, 0, 0);
+    background-color: orange;
+    color: white;
+    padding: 30px;
+    margin: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    
+
+}
+
+#padding-box{
+    background-clip: padding-box;
+}
+
+#border-box{
+    background-clip: border-box;
+}
+
+#content-box{
+    background-clip: content-box;
+}
+
+#text{
+    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+    background-size: 20px 20px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}

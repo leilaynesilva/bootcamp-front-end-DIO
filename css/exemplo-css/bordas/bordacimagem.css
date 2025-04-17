@@ -1,0 +1,53 @@
+.exemplo{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 50px auto;
+    border: 50px solid transparent;
+    border-image-width: 20px;
+
+
+} 
+
+#image-source{
+    border-image-source: url(paisagem1.jpg);
+    
+}
+
+#image-source-linear-gradient{
+border-image-source:linear-gradient(red,blue);
+}
+
+#image-width{
+    border-image: url(https://www.pensarcursos.com.br/blog/wp-content/uploads/2023/08/estrelas.png);
+    border-image-slice: 169;   
+    border-image-width: 10px; 
+}
+  #image-repeat {    
+    border: 10px solid transparent; /* Adiciona a borda para ativar o border-image */
+    border-image-source: url(https://www.pensarcursos.com.br/blog/wp-content/uploads/2023/08/estrelas.png);
+    border-image-slice: 100; /* Ajuste conforme o tamanho da imagem */
+    border-image-repeat: repeat;}
+
+    
+    #image-outset {
+        border-image-source: url(https://www.pensarcursos.com.br/blog/wp-content/uploads/2023/08/estrelas.png);
+        border-image-slice: 50; /* Ajuste conforme o tamanho da imagem */
+        border-image-width: 10px; /* Define a largura da borda */
+        border-image-outset: 5px; /* Faz a borda se expandir para fora do elemento */
+        border-color: white;
+        
+    }
+
+#image-slice{
+    border-image: url(paisagem1.jpg);
+    border-image-slice: 50;   
+}
+
+#exemplo-resumido {
+border-image: url(estrelas.png) 169 / 10px / 1 round ;
+
+/*border-image-source border-image-slice/ border-image-width/ border-image-outset/ border-image-repeat*/
+
+/*A barra é importante pra informar o que esta definindo, tem elemento que pode definir todos os lados*/
+}

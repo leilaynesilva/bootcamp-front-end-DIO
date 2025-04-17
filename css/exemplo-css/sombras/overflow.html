@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .exemplo{
+            height: 200px;
+            width: 200px;
+            border: 5px solid purple;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        #visible{
+            overflow: visible;
+        }
+
+        #hidden{
+            overflow: hidden;
+        }
+
+        #scroll{
+            overflow: scroll;
+        }
+
+        #auto{
+            overflow: auto;
+            
+        }
+
+        #x{
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        #y{
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>overflow</code></h1>
+
+    <p style="font-style: italic;">Exemplos: </p>
+
+    <code>overflow: visible;</code>
+    <div id="visible" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+        </div>
+
+        <br><br><br><br>
+
+    <code>overflow: scroll;</code>
+        <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+        </div>
+
+        <br>
+
+        <code>overflow: auto;</code>
+        <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+        </div>
+
+        <code>overflow: overflow-x;</code>
+        <div id="x" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+        </div>
+
+        <code>overflow: overflow-y;</code>
+        <div id="y" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores provident, nam sequi consequuntur tempora, iusto delectus quis, doloribus ipsum velit rerum praesentium reiciendis officiis laboriosam! Cupiditate omnis mollitia quo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates sint veritatis facere iusto vero odit inventore deleniti rerum beatae quo maxime similique necessitatibus at, delectus magni natus repellat totam?</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <h1>Diferentes tags para imagens:</h1>
+        <h2>Tag Figure</h2>
+        <p>É tratada como um container, delimita o escopo das figuras e vem acompanhada geralmente pela tag figurecaption.</p>
+        <h3>Tag figcaption</h3>
+        <p>É a legenda da imagem, veremos um exemplo de código:</p>
+            <figure>
+                <img src="images/img1.webp" alt="carro cinza em movimento visto de perfil">
+                <figcaption>Carro cinza em movimento visto de perfil</figcaption>
+            </figure>
+        <p>Essa estrutura permite que o bot entenda que tudo faz parte da mesma estrutura e que estão juntos.</p>
+            <code>&lt;figure&gt;<br>
+            &lt;img src="images/img1.webp" alt="carro cinza em movimento visto de perfil"&gt;<br>
+            &lt;figcaption> Carro cinza em movimento visto de perfil &lt;/figcaption&gt;
+            <br>&lt;/figure&gt;
+            </code>
+        <h3>Tag Picture</h3>
+        <p>Permite selecionar várias imagens que serão exibidas de acordo com a tela do usuário.</p>
+        
+        <picture>
+            <source srcset="images/img2.webp" media="(max-width: 400px)">
+            <source srcset="images/img3.webp" media="(max-width: 500px)">
+            <source srcset="images/img1.webp" media="(min-width: 600px)">
+        
+            <img src="images/img1.webp" alt="Imagem alternativa">
+        </picture>
+        
+
+</body>
+</html>

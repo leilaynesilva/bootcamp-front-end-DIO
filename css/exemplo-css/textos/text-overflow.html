@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Overflow</title>
+    <style>
+        .exemplo{
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        p{
+            white-space: nowrap; /*Não tem quebra de linha*/
+            overflow: hidden;
+        }
+
+        #clip{
+            text-overflow: clip;
+        }
+
+        #ellipsis{
+            text-overflow: ellipsis;
+        }
+
+        #string{
+            text-overflow: string;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-overflow:;</code></h1>
+    
+    <code>text-overflow: clip;</code>
+    <p id="clip" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="ellipsis" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p>
+
+    <code>text-overflow: string;</code>
+    <p id="string" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz.
+    </p>
+</body>
+</html>

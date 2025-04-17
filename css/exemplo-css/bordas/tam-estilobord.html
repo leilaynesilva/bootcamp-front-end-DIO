@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho da Borda</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .exemplo {
+            background-color: palevioletred;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+
+        #width {
+            border-width: 5px;
+            border-style: solid;
+        }
+
+        #style{
+            border-style: dashed;
+            border-width: 10px;
+        }
+
+        #color{
+            background-color: white;
+            border-style: double;
+            border-width: 10px;
+            border-color: red yellow blue green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das bordas atraves das propriedades:</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    
+    <h2>Exemplo: </h2>
+    <code>border-width</code>
+    <div id="width"  class="exemplo">Só vai aplicar se usar o estilo junto.</div>
+    
+    <code>border-style</code>
+    <div id="style" class="exemplo">Precisa andar junto com width</div>
+    
+    <code>border-color</code>
+    <div id="color" class="exemplo">  </div>
+</body>
+</html>
