@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
+    <style>
+        table{
+            border: 1px solid black;box-shadow:12px grey;
+        }
+
+        table thead th{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td { 
+            background-color: #f1f1f1;
+        }
+
+        table tbody:hover td { 
+            background-color: green;
+        }
+    </style>
   </head>
   <body>
-    <table >
+    <table width="250" align="center" cellpadding="5" cellspacing="0">
       <thead>
           <tr>
             <th>Nome</th>
